@@ -72,6 +72,13 @@ table {
   height: 200px;
   width: 200px;
 }
+.main .head .information {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main .head .information .info {
+  margin-bottom: 0.5rem;
+}
 .main .head .qr {
   height: 200px;
   width: 200px;
@@ -79,6 +86,7 @@ table {
   box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
 }
 .main .section {
+  font-size: 1.5rem;
   height: 10rem;
   border: 1px solid black;
   display: flex;
@@ -97,9 +105,11 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 2rem;
+  padding: 10rem;
   display: flex;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -109,11 +119,32 @@ table {
 .main .sss .page .fa-window-close {
   font-size: 2rem;
   position: absolute;
+  padding: 1.5rem;
   right: 0;
   top: 0;
 }
 .main .sss .opacity {
   opacity: 1;
+}
+.main .sss .competencies .title {
+  font-weight: bold;
+}
+.main .sss .experiencie {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.main .sss .experiencie .item {
+  margin-bottom: 1.5rem;
+}
+.main .sss .experiencie .item .title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.main .sss .experiencie .item .year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d19ba4;
 }
 
 *, *:after, *:before {

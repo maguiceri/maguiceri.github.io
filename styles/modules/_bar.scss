@@ -22,6 +22,14 @@
             width: 200px;
         }  
 
+        .information{
+            text-align: center;
+            font-size: 1.5rem;
+            .info{
+                margin-bottom: 0.5rem;
+            }
+        }
+
         .qr{
             height: 200px;
             width: 200px;
@@ -31,6 +39,7 @@
     } 
 
     .section{
+        font-size: 1.5rem;
         height: 10rem;
         border: 1px solid black;
         display: flex;
@@ -38,47 +47,68 @@
         justify-content: center; 
         background-color:#A0E7E5;
         padding: 1rem; 
-        transition: opacity 3s;
-        
+        transition: opacity 3s;       
         .page{
             display: none;  
             opacity: 0;                  
-        }                                     
-    }
-    .sss{
-   
+        }                                       
+    } 
+    .sss{  
         .page{  
         top:0;
         left:0;
         right:0;
         bottom:0; 
-        padding: 2rem;      
+        padding: 10rem;      
         display: flex;
-        font-size: 1rem;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3rem;
         flex-direction: column;
         text-align: center;
         justify-content: center; 
         position: absolute;
-        background-color:#A0E7E5; 
-         
-        
+        background-color:#A0E7E5;        
             .fa-window-close{
                 font-size: 2rem;
                 position: absolute; 
+                padding: 1.5rem;
                 right:0;
                 top:0;
-            }   
-              
-           
+            }             
         } 
-        .opacity{
-            
-            
+        .opacity{           
             opacity:1;          
-        }   
-         
-            
-    } 
-     
+        }  
+        .competencies{
+            .title{
+                font-weight: bold;
+            }
+        } 
+        .experiencie{
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            .item{
+                //padding: 0rem;
+                margin-bottom:1.5rem;
+                .title{
+                    margin-bottom: 1rem;
+                    font-weight: bold; 
+                    font-size: 2rem; 
+                }
+                .text{    
+                }
+                .year{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color:#d19ba4; 
+                }
+            }
+           
+        }
+
+    }  
+       
 }
 
