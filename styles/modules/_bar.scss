@@ -13,25 +13,41 @@
         padding: 1rem;           
         background-color:  #FFAEBC;   
         .img{
+            background-position: start;
             border-radius: 100px;
             box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
             height: 200px;
             width: 200px;
-        }  
+        } 
+        @media (max-width:600px){
+            .img{
+            height: 150px;
+            width: 150px;
+            }
+        } 
 
         .information{
             text-align: center;
             font-size: 1.5rem;
-            .info{
-                margin-bottom: 0.5rem;
-            }
         }
-
+        @media (max-width:600px){
+            .information{
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0.5rem;
+            }
+        } 
         .qr{
             height: 200px;
             width: 200px;
             box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
         }
+        @media (max-width:600px){
+            .qr{
+            height: 150px;
+            width: 150px;
+            }
+        } 
     } 
 
     .section{

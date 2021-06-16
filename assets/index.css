@@ -65,22 +65,39 @@ table {
   background-color: #FFAEBC;
 }
 .main .head .img {
+  background-position: start;
   border-radius: 100px;
   box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
   height: 200px;
   width: 200px;
 }
+@media (max-width: 600px) {
+  .main .head .img {
+    height: 150px;
+    width: 150px;
+  }
+}
 .main .head .information {
   text-align: center;
   font-size: 1.5rem;
 }
-.main .head .information .info {
-  margin-bottom: 0.5rem;
+@media (max-width: 600px) {
+  .main .head .information {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+  }
 }
 .main .head .qr {
   height: 200px;
   width: 200px;
   box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 600px) {
+  .main .head .qr {
+    height: 150px;
+    width: 150px;
+  }
 }
 .main .section {
   font-size: 1.5rem;
