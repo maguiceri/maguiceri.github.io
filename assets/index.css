@@ -114,7 +114,7 @@ table {
   position: absolute;
   visibility: hidden;
   overflow: scroll;
-  transition: opacity 500ms;
+  transition: opacity 700ms;
   top: 0;
   left: 0;
   right: 0;
