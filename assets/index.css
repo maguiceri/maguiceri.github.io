@@ -56,45 +56,6 @@ table {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   min-height: 100vh;
-  /*.sss{  
-      .page{  
-      visibility: visible;
-      opacity:1; 
-
-      .fa-window-close{
-              font-size: 2rem;
-              //position: fixed; 
-              //right: 1rem;
-              //top: 1rem;
-          }      
-      }  
-      .competencies{
-      flex-direction: column;
-          .title{
-              font-weight: bold;
-          }
-      } 
-      .experiencie{
-          font-size: 1.5rem;
-          //flex-direction: column;
-          .item{
-
-              .title{   
-
-                  //font-size: 2rem; 
-
-              }
-              .text{
-
-                  font-weight: 200;
-              }
-              .year{
-                font-weight: bold;
-                  color:#d19ba4; 
-              }
-          }          
-      }
-  } */
 }
 .main .head {
   display: flex;
@@ -156,29 +117,7 @@ table {
   flex-direction: column;
   background-color: #A0E7E5;
   flex-grow: 1;
-  /*       .page{
-              opacity: 1;
-              display: flex;
-              position: absolute;
-              visibility: hidden;
-              overflow: scroll;
-              transition: opacity 700ms , ; 
-              //top:0;
-             //left:0;
-              //right:0;
-              //bottom:0; 
-              font-weight: 400;
-              //font-size: 2rem;
-   //           padding-top: 50px;
-   //           flex-direction: column;
-              text-align: start;
-              background-color:#A0E7E5;  
-              .item {
-                  display: flex;
-                  //flex-direction: column;
-                  padding-bottom: 2rem;
-              }
-          }   */
+  padding: 0.5rem;
 }
 .main .section .page {
   transition: height 1s;
@@ -190,11 +129,21 @@ table {
 .main .section .page .text {
   font-weight: 200;
 }
+.main .sss {
+  position: relative;
+}
 .main .sss .page {
   visibility: visible;
   opacity: 1;
-  height: 20rem;
-  overflow-y: visible;
+  height: 10rem;
+  overflow: scroll;
+  scrollbar-face-color: #6685CA;
+}
+.main .sss .fa-window-close {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 @media only screen and (max-width: 600px) {

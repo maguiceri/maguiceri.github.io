@@ -68,11 +68,9 @@
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        //align-items: center;
-        //justify-content: center; 
         background-color:#A0E7E5;
         flex-grow: 1;
-        
+        padding: 0.5rem;
         .page{       
             transition: height 1s;
             overflow: hidden;
@@ -84,89 +82,40 @@
             }
             
         }
-/*       .page{
-            opacity: 1;
-            display: flex;
-            position: absolute;
-            visibility: hidden;
-            overflow: scroll;
-            transition: opacity 700ms , ; 
-            //top:0;
-           //left:0;
-            //right:0;
-            //bottom:0; 
-            font-weight: 400;
-            //font-size: 2rem;
- //           padding-top: 50px;
- //           flex-direction: column;
-            text-align: start;
-            background-color:#A0E7E5;  
-            .item {
-                display: flex;
-                //flex-direction: column;
-                padding-bottom: 2rem;
-            }
-        }   */   
-       // &:hover{
-        
-            //.page{
-            //    visibility: visible;
-            //transition: height 1s;
-            //display: flex;
-            //height:10rem;
-            //}
-       // }                              
+                             
     } 
     .sss{
+        position: relative;
         
         .page{
             visibility: visible;
             opacity: 1;
-            height: 20rem;
-            overflow-y: visible;
+            height: 10rem;
+            overflow: scroll;
+           // overflow: auto; 
             
-        }
+            scrollbar-face-color: #6685CA;
 
-    }
-    /*.sss{  
-        .page{  
-        visibility: visible;
-        opacity:1; 
-        
-        .fa-window-close{
-                font-size: 2rem;
-                //position: fixed; 
-                //right: 1rem;
-                //top: 1rem;
-            }      
-        }  
-        .competencies{
-        flex-direction: column;
-            .title{
-                font-weight: bold;
-            }
-        } 
-        .experiencie{
-            font-size: 1.5rem;
-            //flex-direction: column;
-            .item{
-           
-                .title{   
-                               
-                    //font-size: 2rem; 
-                   
-                }
-                .text{
-                    
-                    font-weight: 200;
-                }
-                .year{
-                  font-weight: bold;
-                    color:#d19ba4; 
-                }
-            }          
+            //scrollbar-highlight-color: #6685CA;
+            
+            //scrollbar-shadow-color: #6685CA;
+            
+            //scrollbar-3dlight-color:#FFFFFF;
+            
+            //scrollbar-arrow-color:#FFFFFF;
+            
+            //scrollbar-track-color:#E5E5E5;
+            
+          
         }
-    } */       
+        .fa-window-close{  
+            position: absolute;        
+            font-size: 1.5rem;
+            //position: fixed; 
+            right:0.5rem;
+            top:0.5rem;
+        }      
+    }        
 }
 
 @media only screen and (max-width: 600px) {
