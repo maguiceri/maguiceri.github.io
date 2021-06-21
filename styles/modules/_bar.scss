@@ -4,7 +4,7 @@
     margin:0rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    height: 100vh;
+    min-height: 100vh;
 
     .head{
         display: flex;
@@ -18,7 +18,15 @@
             box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
             height: 200px;
             width: 200px;
+            transition: width 1s, height 1s , border-radius 1s;
+            &:hover{
+                border-radius: 200px;
+                height: 250px;
+                width: 250px;
+            }
+            
         } 
+        
         @media (max-width:600px){
             .img{
             height: 150px;
@@ -41,6 +49,11 @@
             height: 200px;
             width: 200px;
             box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
+            transition: width 1s, height 1s ;
+            &:hover{
+                height: 250px;
+                width: 250px;
+            }
         }
         @media (max-width:600px){
             .qr{
@@ -54,65 +67,106 @@
         font-size: 1.5rem;
         border: 1px solid black;
         display: flex;
-        align-items: center;
-        justify-content: center; 
+        flex-direction: column;
+        //align-items: center;
+        //justify-content: center; 
         background-color:#A0E7E5;
         flex-grow: 1;
-        .page{
+        
+        .page{       
+            transition: height 1s;
+            overflow: hidden;
+            visibility: hidden;
             opacity: 0;
+            height: 0px;
+            .text{
+                font-weight: 200;
+            }
+            
+        }
+/*       .page{
+            opacity: 1;
             display: flex;
             position: absolute;
             visibility: hidden;
             overflow: scroll;
-            transition: opacity 700ms;                  
-            top:0;
-            left:0;
-            right:0;
-            bottom:0; 
+            transition: opacity 700ms , ; 
+            //top:0;
+           //left:0;
+            //right:0;
+            //bottom:0; 
             font-weight: 400;
-            font-size: 2rem;
-            padding-top: 50px;
-            flex-direction: column;
-            text-align: center;
+            //font-size: 2rem;
+ //           padding-top: 50px;
+ //           flex-direction: column;
+            text-align: start;
             background-color:#A0E7E5;  
             .item {
                 display: flex;
-                flex-direction: column;
+                //flex-direction: column;
                 padding-bottom: 2rem;
             }
-        }                                    
+        }   */   
+       // &:hover{
+        
+            //.page{
+            //    visibility: visible;
+            //transition: height 1s;
+            //display: flex;
+            //height:10rem;
+            //}
+       // }                              
     } 
-    .sss{  
+    .sss{
+        
+        .page{
+            visibility: visible;
+            opacity: 1;
+            height: 20rem;
+            overflow-y: visible;
+            
+        }
+
+    }
+    /*.sss{  
         .page{  
         visibility: visible;
         opacity:1; 
+        
         .fa-window-close{
                 font-size: 2rem;
-                position: fixed; 
-                right: 1rem;
-                top: 1rem;
+                //position: fixed; 
+                //right: 1rem;
+                //top: 1rem;
             }      
         }  
         .competencies{
+        flex-direction: column;
             .title{
                 font-weight: bold;
             }
         } 
         .experiencie{
-            font-size: 1rem;
+            font-size: 1.5rem;
+            //flex-direction: column;
             .item{
-                .title{
-                    font-weight: bold; 
-                    font-size: 2rem; 
+           
+                .title{   
+                               
+                    //font-size: 2rem; 
+                   
+                }
+                .text{
+                    
+                    font-weight: 200;
                 }
                 .year{
-                    font-size: 1.5rem;
-                    font-weight: bold;
+                  font-weight: bold;
                     color:#d19ba4; 
                 }
             }          
         }
-    }        
+    } */       
 }
 
 @media only screen and (max-width: 600px) {
