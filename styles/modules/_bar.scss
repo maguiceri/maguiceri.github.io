@@ -1,78 +1,67 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  margin: 0rem;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
-  min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 0rem;
+font-family: "IBM Plex Sans", sans-serif;
+font-weight: 300;
+min-height: 100vh;
+    a {
+        text-decoration: none;
+    }
 
-  a {
-    text-decoration: none;
-  }
+    a.icon {
+        color: black;
+        font-size: 2rem;   
+        .fa-github{
+            margin-right: 0.5rem;
+        }
+        .fa-linkedin{
+            margin-left: 0.5rem;
+        }
+    }
 
-  a.icon {
-    color: black;
-  }
-
-  .head {
+    .head {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
     background-color: #ffaebc;
-    .img {
-      border-radius: 100px;
-      box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
-      height: 200px;
-      width: 200px;
-      transition: width 200ms, height 200ms, border-radius 200ms,
-        transform 200ms;
-      transform: rotate(0deg);
-      &:hover {
-        border-radius: 200px;
-        height: 220px;
-        width: 220px;
-        transform: rotate(-5deg);
-      }
+        .img {
+        border-radius: 100px;
+        box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
+        height: 200px;
+        width: 200px;
+        transition: width 200ms, height 200ms, border-radius 200ms,transform 200ms;
+        transform: rotate(0deg);
+        &:hover {
+            border-radius: 200px;
+            height: 220px;
+            width: 220px;
+            transform: rotate(-5deg);
+        }
+        }
+        .information {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+            .info{
+                margin-top: 1rem;
+            }
+        }
+        .qr {
+        cursor: pointer;
+        height: 200px;
+        width: 200px;
+        box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
+        transition: width 200ms, height 200ms;
+        &:hover {
+            height: 220px;
+            width: 220px;
+        }
+        }
     }
 
-    @media (max-width: 600px) {
-      .img {
-        height: 150px;
-        width: 150px;
-      }
-    }
-
-    .information {
-      text-align: center;
-      font-size: 1.5rem;
-    }
-    @media (max-width: 600px) {
-      .information {
-        font-size: 1rem;
-        padding: 0.5rem;
-      }
-    }
-    .qr {
-      cursor: pointer;
-      height: 200px;
-      width: 200px;
-      box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
-      transition: width 200ms, height 200ms;
-      &:hover {
-        height: 220px;
-        width: 220px;
-      }
-    }
-    @media (max-width: 600px) {
-      .qr {
-        height: 150px;
-        width: 150px;
-      }
-    }
-  }
-
-  .section {
+    .section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,25 +72,53 @@
     flex-grow: 1;
     padding: 0.5rem;
     cursor: pointer;
-    .content {
-      max-width: 700px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      .title {
-        font-family: "Gentium Basic", sans-serif;
-        font-weight: 700;
-      }
-      .page {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-      }
+        .content {
+        max-width: 700px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+            .title {
+            font-family: "Gentium Basic", sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            }
+            .page {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+                .sub-title{
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+                .text{
+                    font-size: 1.5rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
     }
-  }
+}
+@media (max-width: 600px) {
+    .information {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
 }
 
+@media (max-width: 600px) {
+    .img {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media (max-width: 600px) {
+    .qr {
+      height: 150px;
+      width: 150px;
+    }
+}
 @media only screen and (max-width: 600px) {
   .section .content {
     min-width: 0px;
