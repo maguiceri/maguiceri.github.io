@@ -50,6 +50,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -57,19 +61,6 @@ table {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   min-height: 100vh;
-}
-.main a {
-  text-decoration: none;
-}
-.main a.icon {
-  color: black;
-  font-size: 2rem;
-}
-.main a.icon .fa-github {
-  margin-right: 0.5rem;
-}
-.main a.icon .fa-linkedin {
-  margin-left: 0.5rem;
 }
 .main .head {
   display: flex;
@@ -92,6 +83,12 @@ table {
   width: 220px;
   transform: rotate(-5deg);
 }
+@media (max-width: 600px) {
+  .main .head .img {
+    height: 100px;
+    width: 100px;
+  }
+}
 .main .head .information {
   text-align: center;
   font-size: 1.5rem;
@@ -99,6 +96,32 @@ table {
 }
 .main .head .information .info {
   margin-top: 1rem;
+}
+.main .head .information .info .icon {
+  color: black;
+  font-size: 2rem;
+}
+.main .head .information .info .icon .fa-github {
+  margin-right: 0.5rem;
+}
+.main .head .information .info .icon .fa-linkedin {
+  margin-left: 0.5rem;
+}
+@media (max-width: 600px) {
+  .main .head .information .info .icon {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .head .information .info {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .head .information {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
 .main .head .qr {
   cursor: pointer;
@@ -110,6 +133,12 @@ table {
 .main .head .qr:hover {
   height: 220px;
   width: 220px;
+}
+@media (max-width: 600px) {
+  .main .head .qr {
+    height: 100px;
+    width: 100px;
+  }
 }
 .main .section {
   display: flex;
@@ -135,6 +164,11 @@ table {
   font-weight: 700;
   font-size: 2rem;
 }
+@media (max-width: 600px) {
+  .main .section .content .title {
+    font-size: 1.5rem;
+  }
+}
 .main .section .content .page {
   max-height: 0;
   overflow: hidden;
@@ -145,29 +179,21 @@ table {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 600px) {
+  .main .section .content .page .sub-title {
+    font-size: 1.3rem;
+  }
+}
 .main .section .content .page .text {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
 @media (max-width: 600px) {
-  .information {
+  .main .section .content .page .text {
     font-size: 1rem;
-    padding: 0.5rem;
   }
 }
-@media (max-width: 600px) {
-  .img {
-    height: 150px;
-    width: 150px;
-  }
-}
-@media (max-width: 600px) {
-  .qr {
-    height: 150px;
-    width: 150px;
-  }
-}
+
 @media only screen and (max-width: 600px) {
   .section .content {
     min-width: 0px;
@@ -183,4 +209,4 @@ table {
   box-sizing: border-box;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=Index.css.map */
