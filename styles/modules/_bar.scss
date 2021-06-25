@@ -2,8 +2,8 @@
     display:flex;
     flex-direction: column;
     margin:0rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
     min-height: 100vh;
 
     .head{
@@ -13,7 +13,6 @@
         padding: 1rem;           
         background-color:  #FFAEBC;   
         .img{
-            background-position: start;
             border-radius: 100px;
             box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
             height: 200px;
@@ -41,7 +40,6 @@
         @media (max-width:600px){
             .information{
             font-size: 1rem;
-            font-weight: 400;
             padding: 0.5rem;
             }
         } 
@@ -64,57 +62,40 @@
     } 
 
     .section{
+        display: flex;
+        align-items: center;
         font-size: 1.5rem;
         border: 1px solid black;
-        display: flex;
         flex-direction: column;
         background-color:#A0E7E5;
         flex-grow: 1;
         padding: 0.5rem;
-        .page{       
-            transition: height 1s;
-            overflow: hidden;
-            visibility: hidden;
-            opacity: 0;
-            height: 0px;
-            .text{
-                font-weight: 200;
+        .content{
+        max-width: 700px;
+            .title {
+                font-family: "Gentium Basic", sans-serif;
+                font-weight: 700;
             }
-            
-        }
+            .page{       
+                transition: height 200ms;
+                overflow: hidden;
+                visibility: hidden;
+                opacity: 0;
+                height: 0px;
+            }
+        }   
                              
     } 
     .sss{
         position: relative;
-        
-        .page{
-            visibility: visible;
-            opacity: 1;
-            height: 10rem;
-            overflow: scroll;
-           // overflow: auto; 
-            
-            scrollbar-face-color: #6685CA;
-
-            //scrollbar-highlight-color: #6685CA;
-            
-            //scrollbar-shadow-color: #6685CA;
-            
-            //scrollbar-3dlight-color:#FFFFFF;
-            
-            //scrollbar-arrow-color:#FFFFFF;
-            
-            //scrollbar-track-color:#E5E5E5;
-            
-          
-        }
-        .fa-window-close{  
-            position: absolute;        
-            font-size: 1.5rem;
-            //position: fixed; 
-            right:0.5rem;
-            top:0.5rem;
-        }      
+        .content{
+            .page{
+                overflow: scroll;
+                visibility: visible;
+                opacity: 1;
+                height: auto;            
+            }
+        }    
     }        
 }
 

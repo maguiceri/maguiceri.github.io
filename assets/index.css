@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,8 +54,8 @@ table {
   display: flex;
   flex-direction: column;
   margin: 0rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
   min-height: 100vh;
 }
 .main .head {
@@ -65,7 +66,6 @@ table {
   background-color: #FFAEBC;
 }
 .main .head .img {
-  background-position: start;
   border-radius: 100px;
   box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.4);
   height: 200px;
@@ -90,7 +90,6 @@ table {
 @media (max-width: 600px) {
   .main .head .information {
     font-size: 1rem;
-    font-weight: 400;
     padding: 0.5rem;
   }
 }
@@ -111,39 +110,37 @@ table {
   }
 }
 .main .section {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   border: 1px solid black;
-  display: flex;
   flex-direction: column;
   background-color: #A0E7E5;
   flex-grow: 1;
   padding: 0.5rem;
 }
-.main .section .page {
-  transition: height 1s;
+.main .section .content {
+  max-width: 700px;
+}
+.main .section .content .title {
+  font-family: "Gentium Basic", sans-serif;
+  font-weight: 700;
+}
+.main .section .content .page {
+  transition: height 200ms;
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
   height: 0px;
 }
-.main .section .page .text {
-  font-weight: 200;
-}
 .main .sss {
   position: relative;
 }
-.main .sss .page {
+.main .sss .content .page {
+  overflow: scroll;
   visibility: visible;
   opacity: 1;
-  height: 10rem;
-  overflow: scroll;
-  scrollbar-face-color: #6685CA;
-}
-.main .sss .fa-window-close {
-  position: absolute;
-  font-size: 1.5rem;
-  right: 0.5rem;
-  top: 0.5rem;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
